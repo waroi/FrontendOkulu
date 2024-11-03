@@ -1,0 +1,29 @@
+.bgImage{
+  background-image: url("https://images.unsplash.com/photo-1542435503-956c469947f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+  width: 500px;
+  height: 300px;
+  background-position-x: center;
+  background-position-y: center;
+  background-size: cover;
+  color: rgb(0, 94, 255);
+}
+.title{
+  font-size: 30px;
+}
+.paragraph{
+  font-size: 24px;
+}
+/* media query - Responsive hale getiriyoruz */
+@media screen and (max-width: 768px){
+  .title{
+    font-size: 24px;
+  }
+  .paragraph{
+    font-size: 18px;
+  }
+  .bgImage{
+    width: 300px;
+    height: 150px;
+    color: brown;
+  }
+}
