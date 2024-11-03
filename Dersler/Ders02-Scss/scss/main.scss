@@ -1,0 +1,32 @@
+$bgColor: red;
+$x150: 150px;
+$x100: 100px;
+
+@mixin boxMixin($color, $width, $height) {
+  width: $width;
+  height: $height;
+  background-color: $color;
+}
+
+.container {
+  display: flex;
+  &:hover {
+    background-color: darkgray;
+  }
+  .box1 {
+    @include boxMixin($bgColor, $x150, $x100);
+  }
+  .box2 {
+    @include boxMixin(orange, $x150, $x100 * 2);
+  }
+  .box3 {
+    @extend .box1;
+    width: $x100 * 3;
+  }
+  .box4 {
+    @include boxMixin(green, $x150, $x100 * 4);
+    &.deneme {
+      background-color: blue;
+    }
+  }
+}
