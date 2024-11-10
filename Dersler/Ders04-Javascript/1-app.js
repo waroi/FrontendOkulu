@@ -333,8 +333,82 @@ let value;
 //   console.log(i);
 // }
 
-const langs = ["Python", "Java", "C++", "Javascript"];
+// const langs = ["Python", "Java", "C++", "Javascript"];
 
-for (let index = 0; index < langs.length; index++) {
-  console.log(langs[index]);
-}
+// for (let index = 0; index < langs.length; index++) {
+//   console.log(langs[index]);
+// }
+
+// Function - Fonksiyonlar
+// function merhaba() {
+//   console.log("Merhaba");
+// }
+// merhaba();
+
+// function merhaba() {
+//   return "Merhaba";
+// }
+// console.log(merhaba());
+
+// function user(name, age) {
+//   console.log(`İsim: ${name} Yaş: ${age}`);
+// }
+// user("Varol", 30);
+
+// function user(name = "Bilgi Yok", age = "Bilgi Yok") {
+//   console.log(`İsim: ${name} Yaş: ${age}`);
+// }
+// user("Varol");
+
+// return function
+
+// function square(x) {
+//   return x * x;
+// }
+// const result = square(5) * 3;
+// console.log(result);
+
+// Arrow Function
+
+// const square = (x) => {
+//   return x * x;
+// }
+// const square = (x) => x * x;
+// console.log(square(5));
+
+// while Döngüsü
+
+// let i = 0;
+
+// while (i < 10) {
+//   console.log(i);
+//   i++;
+// }
+
+// while (i < 10) {
+//   if (i == 3) {
+//     i++;
+//     continue;
+//   }
+//   console.log(i);
+//   i++;
+// }
+
+// do while Döngüsü
+
+// do {
+//   console.log(i);
+//   i++;
+// } while (i < 10);
+
+// forEach Döngüsü
+// const langs = ["Python", "Java", "C++", "Javascript"];
+
+// langs.forEach(function (lang, index) {
+//   console.log(lang, index);
+// });
+
+// Map Döngüsü
+// langs.map(function (tamer, hasan) {
+//   console.log(tamer, hasan);
+// });
