@@ -1,0 +1,16 @@
+{
+	"name": "startertemplate",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"sass": "sass -w scss:css"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"bootstrap": "^5.3.3",
+		"sass": "^1.80.6"
+	}
+}
