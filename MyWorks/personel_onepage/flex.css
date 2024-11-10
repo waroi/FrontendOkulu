@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #000;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 20px 0;
+    inset: 0% 0% auto;
+    position: fixed;
+}
+
+/* Navbar Style */
+.navbar{
+    background-color: #ffffff4d;
+    padding: 5px;
+    border-radius: 10px;
+}
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+.navbar ul li{
+    padding: 15px;
+    margin: 0 5px;
+    border-radius:15px;
+    transition: background-color .3s ease;
+}
+.navbar ul li:hover{
+    background-color: #ffffff4d ;
+
+}
+
+.navbar ul li a{
+    color: #1d1d1d;
+    text-decoration: none;
+    font-size:18px;
+    transition: color 0.3 ease;
+
+}
+
+/* Step by Step Container*/
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.container .cover{
+    background: url("img/gray.jpg");
+    background-position: 50%;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    display: flex;
+    color:white;
+}
+
+.daniel{
+    z-index: 1;
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    font-size: 18rem;
+    position: relative;
+    margin-bottom: -2rem;
+    margin-left: 25%;
+}
+.daniel.hero{
+    transform: translate(0, 81.7%);
+}
+
+.stopendaal{
+    z-index: 3;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    font-size: 20rem;
+}
+.stopendaal.hero{
+    transform: translate(0, 41%);
+}
+.daniel-photo{
+    z-index: 2;
+    position: absolute;
+    max-height: 90vh;
+    inset: auto 10% 0% auto;
+    filter: grayscale();
+    object-fit: contain;
+    max-width: 100%;
+    display: inline-block;
+}
+
