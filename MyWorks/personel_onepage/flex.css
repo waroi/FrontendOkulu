@@ -20,25 +20,31 @@ header{
 .navbar{
     background-color: #ffffff4d;
     padding: 5px;
-    border-radius: 10px;
-}
-.navbar ul {
+    border-radius: 5px;
     list-style-type: none;
     display: flex;
     justify-content: center;
 }
-.navbar ul li{
+.navbar a{
     padding: 15px;
     margin: 0 5px;
-    border-radius:15px;
+    border-radius:5px;
     transition: background-color .3s ease;
 }
-.navbar ul li:hover{
+.navbar a:hover{
     background-color: #ffffff4d ;
+}
+.navbar a:last-child{
+    background-color: white;
+
+}
+.navbar a:last-child:hover{
+    background-color: black;
+    color: white;
 
 }
 
-.navbar ul li a{
+.navbar a{
     color: #1d1d1d;
     text-decoration: none;
     font-size:18px;
@@ -84,10 +90,10 @@ header{
     display: block;
     position: relative;
     overflow: hidden;
-    font-size: 20rem;
+    font-size: 19rem;
 }
 .stopendaal.hero{
-    transform: translate(0, 41%);
+    transform: translate(0, 45%);
 }
 .daniel-photo{
     z-index: 2;
