@@ -2,11 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: #000;
 }
+
 header{
     display: flex;
     flex-direction: row;
@@ -14,6 +16,12 @@ header{
     margin: 20px 0;
     inset: 0% 0% auto;
     position: fixed;
+    z-index: 2;
+    transform: translateY(-200%);
+    transition: transform .3s ease-out;
+}
+header.animate{
+    transform: translateY(0%);
 }
 
 /* Navbar Style */
@@ -57,7 +65,7 @@ header{
     display: flex;
     flex-direction: column;
 }
-.container .cover{
+.cover{
     background: url("img/gray.jpg");
     background-position: 50%;
     background-size: cover;
@@ -69,34 +77,110 @@ header{
     flex-flow: column;
     display: flex;
     color:white;
+    position: relative;
+    
 }
+.loader{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 4;
+    background-color: #fff;
 
+}
+.loader.animate{
+    animation: fadeOut 1s forwards;
+}
+@keyframes fadeOut{
+    0%{
+        opacity: 1;
+        height: 100vh;
+    }
+    100%{
+        height: 0;
+    }
+}
+.daniel-container {
+    position: relative;
+    overflow:hidden; /* Sınır dışındaki alanı gizler */
+    width: 100%;
+    height: 50vh; /* Kapsayıcının yüksekliğini belirleyin */
+    top: 35%;
+    
+}
 .daniel{
-    z-index: 1;
+    z-index: 5;
     display: block;
     width: 100%;
     overflow: hidden;
     font-size: 18rem;
-    position: relative;
-    margin-bottom: -2rem;
-    margin-left: 25%;
+    position: absolute;
+    margin-left: 15%;
+    color: rgb(27, 27, 27);
+    transform: translateY(-100%);
+    transition: transform .3s ease-in;
+    top: 0;
 }
-.daniel.hero{
-    transform: translate(0, 81.7%);
+/* Yukarıdan aşağıya belirme animasyonu  ;transform: translate(0, 81.7%); */
+.animate {
+    transform: translateY(0);
+}
+@keyframes d-bounce{
+    0%{
+        top:35%;
+    }
+    50%{
+        top:15%;;
+    }
+    100%{
+        top:40%;;
+    }
+}
+.daniel-container.bounce{
+    animation: d-bounce 0.5s ease forwards;
 }
 
-.stopendaal{
-    z-index: 3;
-    display: block;
+.stopendaal-container{
     position: relative;
+    overflow: hidden; /* Sınır dışındaki alanı gizler */
+    width: 100%;
+    height: 100vh; /* Kapsayıcının yüksekliğini belirleyin */
+    top: 20%;
+}
+.stopendaal{
+    z-index: 7;
+    display: block;
+    position: absolute;
     overflow: hidden;
     font-size: 19rem;
+    transform: translateY(-100%);
+    color: rgb(27, 27, 27);
+    transition: transform .3s ease;
 }
-.stopendaal.hero{
-    transform: translate(0, 45%);
+.stopendaal.animate{
+    transform: translateY(10%);
+}
+@keyframes s-bounce{
+    0%{
+        top:20%;
+    }
+    50%{
+        top:40%;;
+    }
+    100%{
+        top:30%;;
+    }
+}
+.stopendaal-container.bounce{
+    animation: s-bounce 0.5s ease forwards;
 }
 .daniel-photo{
-    z-index: 2;
+    z-index: 6;
     position: absolute;
     max-height: 90vh;
     inset: auto 10% 0% auto;
@@ -104,5 +188,20 @@ header{
     object-fit: contain;
     max-width: 100%;
     display: inline-block;
+    opacity: 0;
+    transition: opacity 1s ease;
 }
-
+.daniel-photo.opacity{
+    opacity: 1;
+}
+.font-transition{
+    animation: fontcolor .5s ease-out forwards;
+}
+@keyframes fontcolor{
+    0%{
+        color:rgb(27, 27, 27);
+    }
+    100%{
+        color:white;
+    }
+}
