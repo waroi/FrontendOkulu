@@ -14,6 +14,8 @@
 - [Git Learning](https://learngitbranching.js.org/)
 - [Can I Use](https://caniuse.com/)
 - [Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+- [Bootstrap](https://getbootstrap.com/)
+- [Tailwind](https://tailwindcss.com/docs/installation)
 
 
 ## Extra Kaynaklar
@@ -21,6 +23,9 @@
 - [Frontend Challenge'lar icin](https://www.frontendmentor.io/challenges)
 - [Flex Oyunu](https://flexboxfroggy.com/#tr)
 - [Grid Oyunu](https://cssgridgarden.com/#tr)
+- [Bootstrap Eğitimi](https://www.btkakademi.gov.tr/portal/course/bootstrap-5-24619)
+- [Vue Eğitimi](https://www.btkakademi.gov.tr/portal/course/vue-js-22502)
+- [Git/Github Eğitimi](https://www.btkakademi.gov.tr/portal/course/versiyon-kontrolleri-git-ve-github-19439)
 
 ## Okumalar
 
