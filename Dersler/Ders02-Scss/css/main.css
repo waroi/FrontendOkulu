@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+}
+.container:hover {
+  background-color: darkgray;
+}
+.container .box1, .container .box3 {
+  width: 150px;
+  height: 100px;
+  background-color: red;
+}
+.container .box2 {
+  width: 150px;
+  height: 200px;
+  background-color: orange;
+}
+.container .box3 {
+  width: 300px;
+}
+.container .box4 {
+  width: 150px;
+  height: 400px;
+  background-color: green;
+}
+.container .box4.deneme {
+  background-color: blue;
+}
+
+/*# sourceMappingURL=main.css.map */

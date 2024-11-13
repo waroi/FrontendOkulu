@@ -1,0 +1,60 @@
+/* Psuedo Class */
+.link{
+  color: rgb(249, 126, 3);
+}
+.link:active{
+  color: rgb(3, 249, 126);
+}
+.link:visited{
+  color: rgb(3, 126, 249);
+}
+.link:hover{
+  color: rgb(126, 3, 249);
+}
+.list_item{
+  color: rgb(249, 3, 126);
+  list-style-type: none;
+  font-size: 18px;
+}
+/* .list_item:first-child{
+  color: rgb(3, 249, 126);
+} */
+/* .list_item:last-child{
+  color: rgb(3, 126, 249);
+} */
+/* .list_item:nth-child(odd) {
+  color: rgb(3, 101, 249);
+} */
+/* .list_item:nth-child(even) {
+  color: rgb(3, 101, 249);
+} */
+/* .list_item:nth-child(2) {
+  color: rgb(3, 101, 249);
+} */
+/* .list_item:nth-child(-n+6) {
+  color: rgb(3, 101, 249);
+} */
+
+/* Psuedo Element */
+/* .list_item::first-letter {
+  color: rgb(3, 101, 249);
+  font-size: 44px;
+}
+p::first-letter {
+  color: rgb(3, 101, 249);
+  font-size: 24px;
+}
+.text::first-line {
+  color: rgb(3, 101, 249);
+  font-size: 24px;
+} */
+.text::after {
+  content: "Merhaba Ben Sona Eklendim!";
+  color: rgb(3, 101, 249);
+  font-size: 24px;
+}
+.text::before {
+  content: "Merhaba Ben Başa Eklendim!";
+  color: rgb(249, 126, 3);
+  font-size: 24px;
+}

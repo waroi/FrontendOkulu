@@ -1,0 +1,27 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.box{
+  height: 50px;
+  width: 250px;
+  margin: 10px;
+}
+
+.red{
+  background-color: red;
+  margin-left: 50px;
+  padding: 20px 0;
+}
+
+.blue{
+  background-color: blue;
+  margin-bottom: 50px;
+}
+
+.green{
+  background-color: green;
+  margin: 100px 20px 70px 50px;
+}

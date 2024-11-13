@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Html Tablo Yapısı - Formlar</title>
+  </head>
+  <body>
+    <!-- <table border="1" cellpadding="10" cellspacing="0" width="100%">
+      <thead>
+        <tr>
+          <th>Ad</th>
+          <th>Soyad</th>
+          <th>Yas</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Varol</td>
+          <td>Maksutoglu</td>
+          <td>23</td>
+        </tr>
+        <tr>
+          <td>Ali</td>
+          <td>Demir</td>
+          <td>22</td>
+        </tr>
+        <tr>
+          <td>Deniz</td>
+          <td>Karadeniz</td>
+          <td>19</td>
+        </tr>
+      </tbody>
+    </table> -->
+    <form>
+      <div>
+        <label for="ad">Ad:</label>
+        <input type="text" id="ad" name="ad" />
+      </div>
+      <div>
+        <label for="surname">Soyad:</label>
+        <input type="text" id="surname" name="surname" />
+      </div>
+      <div>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" />
+      </div>
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" />
+      </div>
+      <div>
+        <label for="date">Tarih:</label>
+        <input type="date" id="date" name="date" />
+      </div>
+      <div>
+        <label for="time">Saat:</label>
+        <input type="time" id="time" name="time" />
+      </div>
+      <div>
+        <label>Cinsiyet:</label>
+        <label for="woman">Kadın</label>
+        <input type="radio" id="woman" name="gender" />
+        <label for="man">Erkek</label>
+        <input type="radio" id="man" name="gender" />
+      </div>
+      <div>
+        <label>Proramlama Dilleri:</label>
+        <label for="python">Python</label>
+        <input type="checkbox" id="python" name="python" />
+        <label for="javascript">Javascript</label>
+        <input type="checkbox" id="javascript" name="javascript" />
+      </div>
+      <input type="submit" value="Gönder" />
+    </form>
+  </body>
+</html>
