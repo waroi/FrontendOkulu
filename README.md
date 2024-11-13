@@ -1,2 +1,0 @@
-# FrontendOkulu
-CoderSpace Frontend Okulu
