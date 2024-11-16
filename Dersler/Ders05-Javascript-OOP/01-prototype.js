@@ -43,11 +43,22 @@ Person.prototype.showInfos = function () {
   console.log(this.name, this.age, this.langs);
 };
 
+function Employee(name, age, langs, salary) {
+  Person.call(this, name, age, langs);
+  this.salary = salary;
+}
+
+Employee.prototype = Object.create(Person.prototype);
+
+const emp1 = new Employee("Varol", 30, ["Java", "Javascript", "Python"], 4000);
+console.log(emp1);
+emp1.showInfos();
+
 const person1 = new Person("Varol", 30, ["Java", "Javascript", "Python"]);
 const person2 = new Person("Mehmet", 31, ["Go", "Javascript", "Python"]);
 
-console.log(person1);
-console.log(person2);
-person1.showInfos();
-person2.showInfos();
-console.log(person1.langs[0]);
+// console.log(person1);
+// console.log(person2);
+// person1.showInfos();
+// person2.showInfos();
+// console.log(person1.langs[0]);
