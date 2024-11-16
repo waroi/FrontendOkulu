@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Varol Maksutoğlu",
+    "department": "Bilişim",
+    "salary": 5000
+  },
+  {
+    "name": "Enes Söl",
+    "department": "Bilişim",
+    "salary": 7000
+  },
+  {
+    "name": "Ömür Kasap",
+    "department": "Muhasebe",
+    "salary": 6000
+  },
+  {
+    "name": "Egehan Demir",
+    "department": "IK",
+    "salary": 5500
+  }
+]
