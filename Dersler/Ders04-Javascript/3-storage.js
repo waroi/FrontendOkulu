@@ -29,8 +29,10 @@
 //   lang: ["Java", "Python", "Javascript"],
 // };
 
+// JSON.stringify() metodu ile objeyi string'e çevirme
 // localStorage.setItem("userDetail", JSON.stringify(user));
 
+// JSON.parse() metodu ile string'i objeye çevirme
 // let userDetail = JSON.parse(localStorage.getItem("userDetail"));
 // console.log(userDetail);
 
@@ -86,13 +88,17 @@
 // console.log(langs);
 
 // Destructing Assignment
-let user = {
-  name: "Varol",
-  age: 25,
-  city: "Ankara",
-  lang: ["Java", "Python", "Javascript"],
-};
+// let user = {
+//   name: "Varol",
+//   age: 25,
+//   city: "Ankara",
+//   lang: ["Java", "Python", "Javascript"],
+// };
 
-let { name, ...geriKalanlar } = user;
+// let { name, age, ...geriKalanlar } = user;
 
-console.log(name, geriKalanlar);
+// console.log(name, age, geriKalanlar);
+
+// let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// let [a, b, ...c] = numbers;
+// console.log(a, b, c);
