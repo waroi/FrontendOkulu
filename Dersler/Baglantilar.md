@@ -16,6 +16,7 @@
 - [Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 - [Bootstrap](https://getbootstrap.com/)
 - [Tailwind](https://tailwindcss.com/docs/installation)
+- [Jsonplaceholder](https://jsonplaceholder.typicode.com)
 
 
 ## Extra Kaynaklar
