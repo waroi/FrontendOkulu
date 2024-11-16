@@ -17,6 +17,7 @@
 - [Bootstrap](https://getbootstrap.com/)
 - [Tailwind](https://tailwindcss.com/docs/installation)
 - [Jsonplaceholder](https://jsonplaceholder.typicode.com)
+- [Json-Server](https://github.com/typicode/json-server)
 
 
 ## Extra Kaynaklar

@@ -47,17 +47,17 @@ class Request {
   }
 }
 
-// Request.get("https://jsonplaceholder.typicode.com/posts")
+// Request.get("http://localhost:3000/users")
 //   .then((data) => console.log(data))
 //   .catch((err) => console.error(err));
 
-// Request.post("https://jsonplaceholder.typicode.com/posts", {
-//   userId: 101,
-//   title: "Post Başlık",
-//   body: "Post Body",
-// })
-//   .then((data) => console.log(data))
-//   .catch((err) => console.error(err));
+Request.post("http://localhost:3000/users", {
+  name: "Varol",
+  department: "Deneme",
+  salary: "651651",
+})
+  .then((data) => console.log(data))
+  .catch((err) => console.error(err));
 
 // Request.put("https://jsonplaceholder.typicode.com/posts/2", {
 //   userId: 101,
@@ -67,6 +67,6 @@ class Request {
 //   .then((data) => console.log(data))
 //   .catch((err) => console.error(err));
 
-Request.delete("https://jsonplaceholder.typicode.com/posts/2")
-  .then((data) => console.log(data))
-  .catch((err) => console.error(err));
+// Request.delete("https://jsonplaceholder.typicode.com/posts/2")
+//   .then((data) => console.log(data))
+//   .catch((err) => console.error(err));
