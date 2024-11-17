@@ -12,26 +12,33 @@ const ui = new UI();
 const storage = new Storage();
 
 // Eventler
+eventListeners();
 function eventListeners() {
   form.addEventListener("submit", addFilm);
+  document.addEventListener("DOMContentLoaded", loadAllFilms);
 }
-eventListeners();
 
 function addFilm(e) {
+  e.preventDefault();
   const title = titleElement.value;
   const director = directorElement.value;
   const url = urlElement.value;
 
   if (title === "" || director === "" || url === "") {
-    // Hata Mesajı Verilecek
-    console.log("Hata: Eksik Bilgi Girişi");
+    // Hata Mesajı
+    ui.displayMessage("Tüm Alanları Doldurunuz...", "danger");
   } else {
     // Yeni Film Ekleme
     const newFilm = new Film(title, director, url);
     ui.addFilmToUI(newFilm); // Arayüze Film Ekleme
     storage.addFilmToStorage(newFilm); // Storage'a Film Ekleme
-    // Başarılı Mesajı Verilecek
+    // Başarılı Mesajı
+    ui.displayMessage("Film Ekleme İşlemi Başarılı...", "success");
     ui.clearInputs(titleElement, directorElement, urlElement); // Inputları Temizleme
-    e.preventDefault();
   }
+}
+
+function loadAllFilms() {
+  let films = storage.getFilmsFromStorage();
+  ui.loadAllFilms(films);
 }

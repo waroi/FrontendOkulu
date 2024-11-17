@@ -3,7 +3,7 @@ function Storage() {}
 Storage.prototype.addFilmToStorage = function (newFilm) {
   let films = this.getFilmsFromStorage();
   films.push(newFilm);
-  localeStorage.setItem("films", JSON.stringify(films));
+  localStorage.setItem("films", JSON.stringify(films));
 };
 
 Storage.prototype.getFilmsFromStorage = function () {
