@@ -1,0 +1,25 @@
+#root {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.app{
+  text-align: center;
+  height: 100vh;
+}
+
+.app.dark{
+  background-color: #333;
+  color: #fff;
+}
+
+.app.light{
+  background-color: #fff;
+  color: #333;
+}
+
+h1{
+  margin: 0;
+  padding: 0;
+}
