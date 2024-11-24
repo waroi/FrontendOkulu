@@ -1,7 +1,6 @@
 import PropTypes from "prop-types";
 
 const Title = ({ size, onClick, text, ...props }) => {
-  console.log(...props);
   return (
     <div {...props} onClick={onClick} className={`custom-title ${size}`}>
       {text}
@@ -17,7 +16,6 @@ Title.propTypes = {
 
 Title.defaultProps = {
   size: "medium",
-  onClick: undefined,
   text: "Başlık 1",
 };
 
