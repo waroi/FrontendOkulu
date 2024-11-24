@@ -23,7 +23,10 @@
 - [Vite](https://vite.dev/guide/)
 - [Bun](https://bun.sh)
 - [Styled Components](https://styled-components.com/)
-- [React Developer Tools](https://chromewebstore.google.com/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi) 
+- [React Developer Tools](https://chromewebstore.google.com/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi)
+- [React Redux Toolkit](https://redux-toolkit.js.org/introduction/getting-started)
+
+
 
 ## Extra Kaynaklar
 
