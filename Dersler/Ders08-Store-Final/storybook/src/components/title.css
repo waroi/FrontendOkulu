@@ -1,0 +1,19 @@
+.custom-title{
+  line-height: 30px;
+  letter-spacing: 1px;
+}
+
+.custom-title.medium{
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.custom-title.large{
+  font-size: 32px;
+  font-weight: 800;
+}
+
+.custom-title.small{
+  font-size:14px;
+  font-weight: 500;
+}
