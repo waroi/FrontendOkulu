@@ -1,9 +1,17 @@
 import Title from "../components/Title";
 
 export default {
-  title: "Title",
+  title: "Deneme/Title",
   component: Title,
   tags: ["autodocs"],
+  decorators: [
+    (Story) => (
+      <div style={{ margin: "3em" }}>
+        {"Title şöyle kullanılır vs vs"}
+        <Story />
+      </div>
+    ),
+  ],
 };
 
 const Template = () => <Title />;
